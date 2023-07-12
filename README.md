@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Smart Civic Issues Reporter
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Problem Statement
+Citizens are often dissatisfied with the surrounding or urban infrastructure, but may not prefer traditional grievance systems that have to go through lengthy procedures such as going to the office and waiting in line for hours. This can lead to a lack of communication between citizens and government agencies, which can make it difficult to identify and address problems. In addition, traditional grievance systems can be time-consuming and inefficient, which can delay the resolution of problems.
 
-## About Laravel
+## Aim
+The aim of this project is to develop a mobile application that makes it easy for citizens to report complaints and participate in the decision-making process, along with a web portal where officials can manage the reported issues. The application will be easy to use and accessible to everyone, regardless of their age or technical expertise. It will also provide a transparent and efficient way for civil servants to address complaints.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Objectives
+- Automatically geotag the reported complaints using the mobile application.
+- Manage civic complaints and update their resolution status via the web application.
+- Highlight the areas of the reported issues on a map using map markers.
+- Classify feedback from citizens to gain an overview of the damage severity using image processing techniques.
+- Generate data-driven analysis reports to provide intelligent insights for decision making.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technologies Used
+- React Native with Expo for mobile application development.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Setup Instructions
+1. Clone the repository.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+2. **Install dependencies:**
+This command will navigate to your project directory and install the required dependencies listed in the `package.json` file.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. **Configure environment variables (if applicable):**
+- Create a `.env` file in the root of your project.
+- Add any necessary environment variables to the file, such as API keys or configuration settings.
 
-## Laravel Sponsors
+4. **Run the application on a development server:**
+- For iOS:
+  ```
+  npx react-native run-ios
+  ```
+  This command will start the iOS simulator and launch the application.
+- For Android:
+  ```
+  npx react-native run-android
+  ```
+  Make sure you have an Android emulator running or a physical Android device connected via USB.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+5. **Verify the installation:**
+- You should see the React Native application running on the simulator or device.
 
-### Premium Partners
+6. **Proceed**
+- Open the project in your preferred code editor.
+- Modify the code in the `src` directory to build your application.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+7. **Build and deploy the application:**
+- For iOS:
+  - Configure the necessary certificates and provisioning profiles.
+  - Build the release version:
+    ```
+    npx react-native run-ios --configuration Release
+    ```
+- For Android:
+  - Configure the necessary signing keys and build settings.
+  - Build the release version:
+    ```
+    npx react-native run-android --variant=release
+    ```
 
-## Contributing
+These setup instructions provide a general guideline for setting up a React Native project. Make sure to adjust the instructions based on your specific project requirements and any additional configuration steps necessary for your development environment or target platforms.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Feel free to copy and paste these instructions into your README.md file and modify them as needed to fit your project.
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+2.
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Usage
+- To use the mobile application:
+  - Download and install the application from the [App Store/Google Play Store].
+  - Create an account or log in if you already have one.
+  - Follow the on-screen instructions to report complaints and provide feedback.
+- To use the web portal:
+  - Visit [web portal URL].
+  - Log in with your credentials.
+  - Access and manage reported complaints, update resolution status, and view data-driven analysis reports.
 
 ## License
+[Harare Institute Of Technology]
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Contributors
+- [@1109-Design @KulyCoty @ETC]
+
+## Contact
+For any inquiries or support, please contact tinashepresleychaitezvi00@gmail.com
